@@ -2,8 +2,39 @@ dwfewtter  t r te ret tr tr egg
 gt
 r
 etsdvgdffs d sfd  
-
-escdf ds fds fs d dsf  fds sdf fds  f sd fdsds sdqwq w qe eqw ewq ewq weq weq weq eqw sfrr w e rwef ee re w re  e wrew y 876 8 687w werreger
+safsfasaf fsa
+escdf ds fds fs d dsf  fds sdf fds  f sd fdsds sdqwq w qe eqw ewq ewq weq weq weq eqwclass Solution {
+    public String largestSwap(String s) {
+        
+        char[] arr = s.toCharArray();
+        int n = arr.length;
+        
+        int[] last = new int[10];
+        
+        // store last index of each digit
+        for (int i = 0; i < n; i++) {
+            last[arr[i] - '0'] = i;
+        }
+        
+        for (int i = 0; i < n; i++) {
+            int current = arr[i] - '0';
+            
+            // check for larger digits
+            for (int d = 9; d > current; d--) {
+                if (last[d] > i) {
+                    
+                    char temp = arr[i];
+                    arr[i] = arr[last[d]];
+                    arr[last[d]] = temp;
+                    
+                    return new String(arr);
+                }
+            }
+        }
+        
+        return s;
+    }
+}dsa  fsa fsa as sfrr w e rwef ee re w re  e wrew y 876 8 687w werreger
 xcc c  z zc x xz cx x zasda sd dsa sad sa s d dsa sda asd ads sdtfe f gdf df  dfg  g
 erfd df  dfs dfs  dfs fd s srte ret ter ter ert tuy tu uty ytu yut sad adssdamdsadasmasdm q w wq wqe ewq weq
 ercs  as  s d sa a sd 
