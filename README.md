@@ -1,4 +1,4 @@
-dwfewtter  t r te ret tr tr egg
+sdwfewtter  t r te ret tr tr egg
 gt
 r
 etsdvgdffs d sfd  
@@ -8,7 +8,7 @@ escdf ds fds fs d dsf  fds sdf fds  f sd fdsds sdqwq w qe eqw ewq ewq weq weq we
         
         char[] arr = s.toCharArray();
         int n = arr.length;
-        
+        fd fds sfd  sfd fdsdfs
         int[] last = new int[10];
         
         // store last index of each digit
